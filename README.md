@@ -13,7 +13,8 @@ cd globax-frontend
 ```
 
 3. Установить зависимости
-   npm:
+
+npm:
 
 ```bash
 npm i
