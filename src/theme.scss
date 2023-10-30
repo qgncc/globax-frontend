@@ -1,0 +1,21 @@
+:root {
+	// palette
+	--color--white: #fff;
+	--color--black: #000;
+	--color--asphalt: #8189a3;
+	--color--purple_fog: #432eab;
+	--color--plumbum: #262c40;
+	--color--blueberry: #d4defe;
+
+	// text
+	--theme--text_primary: var(--color--black);
+	--theme--text_secondary: var(--color--asphalt);
+	--theme--text_header: var(--color--plumbum);
+	// icons
+	--theme--icon: var(--color--purple_fog);
+	// background
+	--theme--background: var(--color--white);
+	--theme--background_input: var(--color--white);
+	// border
+	--theme--border_input: var(--color--blueberry);
+}

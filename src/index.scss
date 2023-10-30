@@ -1,0 +1,43 @@
+:root {
+  font-family: "Rubick", Proxima Nova, Inter, system-ui, Avenir, Helvetica,
+    Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 64px 80px;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+}

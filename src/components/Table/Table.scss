@@ -1,0 +1,25 @@
+.table {
+	tr:not(:first-child) > td,
+	tr:not(:first-child) > th {
+		padding-top: 14px;
+	}
+	padding: 14px 0;
+}
+.th {
+	font-weight: normal;
+	font-size: 1rem;
+	&--col {
+		text-align: center;
+	}
+	&--row {
+		padding-right: 40px;
+		text-align: left;
+	}
+}
+
+.td {
+	word-break: break-all;
+	color: var(--theme--text_secondary);
+	font-size: 0.8888rem;
+	text-align: left;
+}

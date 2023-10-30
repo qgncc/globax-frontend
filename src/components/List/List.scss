@@ -1,0 +1,20 @@
+.list {
+	padding: 0;
+	&__item {
+		margin-bottom: 14px;
+		list-style: none;
+		color: var(--theme--text_secondary);
+		display: flex;
+		word-break: break-all;
+	}
+	&__itemContent {
+		flex-basis: 100%;
+		flex-shrink: 1;
+	}
+	&__iconBefore {
+		margin-right: 14px;
+	}
+	&__iconAfter {
+		margin-left: 14px;
+	}
+}
