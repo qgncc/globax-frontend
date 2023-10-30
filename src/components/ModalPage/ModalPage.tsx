@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { MouseEventHandler, ReactNode, useCallback } from "react";
 import { Card } from "../Card";
 import "./ModalPage.scss";
 import closeIconSVG from "../../assets/icons/close.svg";
@@ -16,9 +16,15 @@ export const ModalPage = ({
 	header,
 	onClose,
 }: IModalPageProps) => {
+	const handleOnClick = useCallback<MouseEventHandler<HTMLDivElement>>(
+		(event) => {
+			event.target === event.currentTarget && onClose && onClose();
+		},
+		[onClose],
+	);
 	return (
 		isOpen && (
-			<div className="modalPage">
+			<div className="modalPage" onClick={handleOnClick}>
 				<Card
 					header={header}
 					headerAfter={
